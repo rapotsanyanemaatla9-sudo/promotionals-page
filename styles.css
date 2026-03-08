@@ -1,12 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-    color: #333;
+    color: white;
     background-color: #f4f4f4;
     line-height: 1.6;
 }
 
 header {
-    background-color: #1d2d43;
     color: white;
     padding: 20px;
     text-align: center;
