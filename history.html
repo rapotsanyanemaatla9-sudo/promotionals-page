@@ -14,14 +14,16 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>History of Ryder Digitals</h1>
+    <header> 
+        <h1>History of Ryder Digitals</h1> 
           <div class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
             <a href="contact.html">Contact Us</a>
             <a href="history.html">History</a>
           </div>
+           <span onclick="openNav()">open</span>
     </header>
     <div class="main">
         <section>
@@ -43,5 +45,16 @@
 <footer>
     <p>&copy; 2026 Ryder Digitals. All rights reserved.</p>
 </footer>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
 </body>
 </html>
