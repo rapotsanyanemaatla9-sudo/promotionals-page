@@ -12,6 +12,63 @@
             background-size: cover;
         }
     </style>
+    <style>
+        body {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            height: 100vh;
+            background-color: #d4d2d2;
+        }
+        form {
+            width: 400 px;
+            background-color: #656978;
+            border: 10px;
+            padding: 20px;
+        }
+        fieldset {
+            border-radius: 3 px;
+            border-color: #1d2d43;
+            padding: 10px
+        }
+        legend {
+            font-weight: bold;
+            font-style: italic;
+            margin-bottom: 10px ;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #d4d2d2;
+            border-radius: border-box;
+        }
+            .region-division {
+                margin-bottom: 10px;
+            }
+            .region-division label {
+                margin-left: 5px;
+                display: block;
+            }
+            .region-division input[type="checkbox"] {
+                margin-left: 8px;
+                vertical-align: middle;
+            }
+            input[type="submit"] {
+                background-color: #1d2d43;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover {
+                background-color: #3a4a63;
+            }   
+    </style>
 </head>
 <body>
     <header>
@@ -26,7 +83,7 @@
          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
     </header>
     <div class="main">
-        
+        <div col-md-6>
         <h3>"Digital growth, but make it hermosa!"</h3>
          <p>Ryder Digitals is a place where dreams are put to life and transformed into digital success stories.</p>
     <p>You have a small business you want to make known to the world? Allow us to do it for you!</p>
@@ -34,7 +91,44 @@
 
      <h2>Be it a startup, big or small, an individual or a company, no matter the brand, Ryder Digitals is the marketer/promoter for you.</h2>
     <img src="difference-variety-diversity-teamwork-success-HTTWJY.jpg" alt="diversity">
-        
+    <div col-md-6>
+    <form action="confirmation.html">
+        <fieldset>
+            <legend>User Registration</legend>
+        <label for="oname">Organization name:</label><br>
+        <input type="text" id="oname" name="oname"><br>
+        <label for="fname">Full names:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="email">Organization email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <label for="confirm_password">Confirm password:</label><br>
+        <input type="password" id="confirm_password" name="confirm_password"><br>
+        <label for="region">Your Region:</label>
+            <div class="region-division">
+                <input type="checkbox" name="region" value="southern" id="southern" readonly>
+                <label for="southern">Southern Africa</label>
+                <input type="checkbox" name="region" value="north" id="north" readonly>
+                <label for="north">Northern Africa</label>
+                <input type="checkbox" name="region" value="west" id="west" readonly>
+                <label for="west">Western Africa</label>
+                <input type="checkbox" name="region" value="east" id="east" readonly>
+                <label for="east">Eastern Africa</label>
+                <input type="checkbox" name="region" value="central(middle)" id="central(middle)" readonly>
+                <label for="central(middle)">Central Africa</label>
+            </div>
+        <label for="country">Your Country:</label><br>
+        <input type="text" id="country" name="country"><br>
+        <label for="city,town,village">Your City, Town, or Village:</label><br>
+        <input type="text" id="city,town,village" name="city,town,village"><br><br>
+        <label for="address">Your Address:</label><br>
+        <input type="text" id="address" name="address"><br><br>
+        <input type="submit" onclick="openPopup" value="Submit">
+        </fieldset>
+     </form>
+        </div>
+    </div>
     </div>
 <footer>
     <p>&copy; 2026 Ryder Digitals. All rights reserved.</p>
