@@ -37,12 +37,13 @@ header h1 {
     font-style: italic;
 }
 
-main {
+.main {
     color: #475a75;
-    padding: 20px;
+    margin-left: 160px;
+    padding: 0px 10px;
 }
 
-main img {
+.main img {
     max-width: 100%;
     height: auto;
     display: block;
