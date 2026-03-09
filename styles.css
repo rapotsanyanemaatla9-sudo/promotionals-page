@@ -51,6 +51,7 @@ header h1 {
     transition: margin-left .5s;
     padding: 20px;
     margin: auto;
+    viewport-fit: cover;
 }
 
 .main img {
