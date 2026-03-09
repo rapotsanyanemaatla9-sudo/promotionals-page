@@ -50,6 +50,7 @@ header h1 {
     color: #475a75;
     transition: margin-left .5s;
     padding: 20px;
+    margin: auto;
 }
 
 .main img {
